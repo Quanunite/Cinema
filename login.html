@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>trang đăng nhập/đăng ký</title>
+     <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #ffcc00;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #e6b800;
+        }
+        .form-toggle {
+            margin-top: 20px;
+        }
+        .form-toggle a {
+            color: #ffcc00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .form-toggle a:hover {
+            text-decoration: underline;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <!-- Đăng Nhập Form -->
+        <div id="login-form">
+            <h1>Đăng Nhập</h1>
+            <form action="dashboard.html" method="POST">
+                <input type="text" name="username" placeholder="Tên đăng nhập" required><br>
+                <input type="password" name="password" placeholder="Mật khẩu" required><br>
+                <button type="submit">Đăng Nhập</button>
+            </form>
+            <div class="form-toggle">
+                <p>Chưa có tài khoản? <a href="#" onclick="toggleForms()">Đăng ký ngay</a></p>
+            </div>
+        </div>
+
+        <!-- Đăng Ký Form -->
+        <div id="signup-form" class="hidden">
+            <h1>Đăng Ký</h1>
+            <form action="welcome.html" method="POST">
+                <input type="text" name="username" placeholder="Tên đăng nhập" required><br>
+                <input type="email" name="email" placeholder="Email" required><br>
+                <input type="password" name="password" placeholder="Mật khẩu" required><br>
+                <button type="submit">Đăng Ký</button>
+            </form>
+            <div class="form-toggle">
+                <p>Đã có tài khoản? <a href="#" onclick="toggleForms()">Đăng nhập ngay</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Hàm để chuyển đổi giữa form Đăng Nhập và Đăng Ký
+        function toggleForms() {
+            var loginForm = document.getElementById("login-form");
+            var signupForm = document.getElementById("signup-form");
+
+            if (loginForm.classList.contains("hidden")) {
+                loginForm.classList.remove("hidden");
+                signupForm.classList.add("hidden");
+            } else {
+                loginForm.classList.add("hidden");
+                signupForm.classList.remove("hidden");
+            }
+        }
+    </script>
+
+</body>
+</html>
