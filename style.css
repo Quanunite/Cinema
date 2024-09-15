@@ -10,9 +10,6 @@ body {
      padding: 0;
      background-color: #f4f4f4;
  }
- a button{
-    color -ms-word-wrap: white-space-collapse: ;
- }
  .navbar {
     background-color: rgba(0, 0, 0, 0.8);
     padding: 10px 20px;
@@ -147,4 +144,5 @@ body {
      position: fixed;
      bottom: 0;
      width: 100%;
- }
+ } 
+ 

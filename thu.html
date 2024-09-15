@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Thu nghiem</title>
+     <style>
+          body {
+              font-family: Arial, sans-serif;
+              margin: 0;
+              padding: 0;
+              background-color: #f5f5f5;
+          }
+          .navbar {
+              background-color: #333;
+              color: white;
+              padding: 15px;
+              text-align: left;
+              font-size: 20px;
+          }
+          .navbar a {
+              color: white;
+              text-decoration: none;
+              padding: 0 15px;
+          }
+          .navbar a:hover {
+              color: yellow;
+          }
+          .container {
+              padding: 20px;
+              display: flex;
+              justify-content: center;
+              flex-wrap: wrap;
+          }
+          .movie-card {
+              background-color: white;
+              border-radius: 8px;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+              margin: 10px;
+              padding: 10px;
+              width: 300px;
+              text-align: left;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+          }
+          .movie-card img {
+              max-width: 100%;
+              border-radius: 8px;
+          }
+          .movie-info {
+              padding: 10px 0;
+          }
+          .footer {
+              background-color: #333;
+              color: white;
+              text-align: center;
+              padding: 20px;
+              position: fixed;
+              width: 100%;
+              bottom: 0;
+          }
+      </style>
+</head>
+<body>
+     
+    <div class="navbar">
+     <a href="index.html">Trang chủ</a>
+     <a href="kho-phim.html">Kho Phim</a>
+     <a href="phim-dien-anh.html">Phim Điện Ảnh</a>
+     <a href="phim-bo.html">Phim Bộ</a>
+     <a href="phim-thue.html">Phim Thuê</a>
+     <a href="khuyen-mai.html">Khuyến Mãi</a>
+     <a href="blog.html">Blog</a>
+     <a href="ho-tro.html">Hỗ Trợ</a> <!-- Liên kết trang hỗ trợ -->
+     <button style="float: right; margin-right: 20px;">Đăng Nhập</button>
+ </div>
+
+ <div class="container">
+     <!-- Thẻ phim 1 -->
+     <div class="movie-card">
+         <img src="/mnt/data/image.png" alt="Phim 1">
+         <div class="movie-info">
+             <h3>Tựa đề Phim 1</h3>
+             <p><strong>Thể loại:</strong> Hoạt hình, Phiêu lưu</p>
+             <p><strong>Năm phát hành:</strong> 2024</p>
+             <p><strong>Mô tả:</strong> Đây là một bộ phim hoạt hình đầy kịch tính với nhiều cuộc phiêu lưu hấp dẫn.</p>
+         </div>
+     </div>
+
+     <!-- Thẻ phim 2 -->
+     <div class="movie-card">
+         <img src="/mnt/data/image.png" alt="Phim 2">
+         <div class="movie-info">
+             <h3>Tựa đề Phim 2</h3>
+             <p><strong>Thể loại:</strong> Hài hước, Lãng mạn</p>
+             <p><strong>Năm phát hành:</strong> 2024</p>
+             <p><strong>Mô tả:</strong> Một bộ phim hài hước với nhiều chi tiết thú vị.</p>
+         </div>
+     </div>
+
+     <!-- Thẻ phim 3 -->
+     <div class="movie-card">
+         <img src="/mnt/data/image.png" alt="Phim 3">
+         <div class="movie-info">
+             <h3>Tựa đề Phim 3</h3>
+             <p><strong>Thể loại:</strong> Khoa học viễn tưởng, Phiêu lưu</p>
+             <p><strong>Năm phát hành:</strong> 2024</p>
+             <p><strong>Mô tả:</strong> Một bộ phim phiêu lưu với nhiều yếu tố khoa học viễn tưởng đầy hấp dẫn.</p>
+         </div>
+     </div>
+ </div>
+
+ <div class="footer">
+     © 2024 Trang Web Phim. All rights reserved.
+ </div>
+
+</body>
+</html>

@@ -4,9 +4,70 @@
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>vfhjs</title>
+     <style>
+         <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+        .navbar {
+            background-color: #333;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            text-align: center;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: inline-block;
+            font-size: 18px;
+        }
+        .navbar a:hover {
+            background-color: #575757;
+        }
+        section {
+            padding: 60px 20px;
+            height: 100vh;
+        }
+        #intro {
+            background-color: #f4f4f4;
+        }
+        #movies {
+            background-color: #eaeaea;
+        }
+        #contact {
+            background-color: #d9d9d9;
+        }
+    </style>
 </head>
 <body>
-     <h1>tiêu đề</h1>
-     <p></p>
+      <!-- Thanh điều hướng -->
+    <div class="navbar">
+     <a href="#intro">Giới thiệu</a>
+     <a href="#movies">Phim mới</a>
+     <a href="#contact">Liên hệ</a>
+ </div>
+
+ <!-- Nội dung trang -->
+ <section id="intro">
+     <h1>Giới thiệu</h1>
+     <p>Đây là phần giới thiệu về trang web của bạn...</p>
+ </section>
+
+ <section id="movies">
+     <h1>Phim mới</h1>
+     <p>Danh sách các bộ phim mới...</p>
+ </section>
+
+ <section id="contact">
+     <h1>Liên hệ</h1>
+     <p>Thông tin liên hệ...</p>
+ </section>
 </body>
 </html>
